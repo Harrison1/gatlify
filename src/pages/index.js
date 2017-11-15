@@ -7,11 +7,11 @@ export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
-    
+
     return (
       <section className="section">
         <Helmet>
-          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+          <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         </Helmet>
         <div className="container">
           {posts.filter(post => post.node.frontmatter.templateKey === 'blog-post').map(({ node: post }) => {
