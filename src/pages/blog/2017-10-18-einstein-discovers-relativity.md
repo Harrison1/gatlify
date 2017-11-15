@@ -1,5 +1,5 @@
 ---
-templateKey: 'blog-post'
+templateKey: blog-post
 path: /einstein
 title: Einstein Discovers Relativity
 date: 2017-10-18T17:12:33.962Z
@@ -8,5 +8,6 @@ In 1905, **Albert Einstein** determined that the laws of physics are the same fo
 
 ## Hello Netlify Gatsby
 
+Look at me now
 
 ![einstein](/img/einstein.jpg)
