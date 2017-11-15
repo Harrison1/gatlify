@@ -11,7 +11,7 @@ export default class IndexPage extends React.Component {
     return (
       <section className="section">
         <Helmet>
-          <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         </Helmet>
         <div className="container">
           {posts.filter(post => post.node.frontmatter.templateKey === 'blog-post').map(({ node: post }) => {
