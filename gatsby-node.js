@@ -1,4 +1,5 @@
 const path = require('path');
+const createPaginatedPages = require('gatsby-paginate');
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
@@ -14,7 +15,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             frontmatter {
               templateKey
               path
-              date
+              date(formatString: "MMMM DD, YYYY")
               title
             }
           }
@@ -22,6 +23,12 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       }
     }
   `).then(result => {
+    createPaginatedPages({
+      edges: result.data.allMarkdownRemark.edges,
+      createPage: createPage,
+      pageTemplate: "src/templates/index.js",
+      pageLength: 2
+    });
     if (result.errors) {
       return Promise.reject(result.errors);
     }

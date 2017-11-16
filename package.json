@@ -7,6 +7,7 @@
     "bulma": "^0.6.0",
     "gatsby": "^1.9.63",
     "gatsby-link": "^1.6.21",
+    "gatsby-paginate": "^1.0.6",
     "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-plugin-sass": "^1.0.12",
     "gatsby-remark-images": "^1.5.18",
