@@ -16,36 +16,38 @@ const IndexPage = ({ data, pathContext }) => {
   const previousUrl = index - 1 == 1 ? "" : (index - 1).toString();
   const nextUrl = (index + 1).toString();
   // const { data } = this.props;
-  const { edges: posts } = data.allMarkdownRemark;
+  const { edges: nodes } = data.allMarkdownRemark;
+
+  console.log(data);
  
   return (
 
-      <section className="section">
+    <section className="section">
       <Helmet>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
       </Helmet>
       <div className="container">
-      <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+      <h4>{data.allMarkdownRemark.totalCount} nodes</h4>
 
+      {group.map(({ node }) => (
+              <div className="content" style={{ border: '1px solid #eaecee', padding: '2em 4em' }} key={node.id}>
+                <p>
+                  <Link to={node.frontmatter.path}>{node.frontmatter.title}</Link>
+                  <span> &bull; </span>
+                  <small>{node.frontmatter.date}</small>
+                </p>
+                <p>
+                  {node.excerpt}
+                  <br />
+                  <br />
+                  <Link className="button is-info is-small" to={node.frontmatter.path}>
+                    Keep Reading
+                  </Link>
+                </p>
+              </div>
 
-          {group.map(({ node }) => (
+          ))}
 
-            <div className="content" style={{ border: '1px solid #eaecee', padding: '2em 4em' }} key={node.id}>
-              <p>
-                <Link to={node.frontmatter.path}>{node.frontmatter.title}</Link>
-                <span> &bull; </span>
-                <small>{node.frontmatter.date}</small>
-              </p>
-              <p>
-                {node.excerpt}
-                <br />
-                <br />
-                <Link className="button is-info is-small" to={node.frontmatter.path}>
-                  Keep Reading
-                </Link>
-              </p>
-            </div>
-        ))}
         <div className="previousLink">
           <NavLink test={first} url={previousUrl} text="Go to Previous Page" />
         </div>

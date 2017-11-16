@@ -23,8 +23,12 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       }
     }
   `).then(result => {
+
+    const posts = result.data.allMarkdownRemark.edges;
+    const blogposts = posts.filter(post => post.node.frontmatter.templateKey === 'blog-post');
+
     createPaginatedPages({
-      edges: result.data.allMarkdownRemark.edges,
+      edges: blogposts,
       createPage: createPage,
       pageTemplate: "src/templates/index.js",
       pageLength: 2
