@@ -15,6 +15,9 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Path", name: "path", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured Image", name: "img", widget: "string"}
+      - {label: "Featured Video", name: "video", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
 

@@ -17,8 +17,6 @@ const IndexPage = ({ data, pathContext }) => {
   const nextUrl = (index + 1).toString();
   // const { data } = this.props;
   const { edges: nodes } = data.allMarkdownRemark;
-
-  console.log(data);
  
   return (
 
@@ -36,6 +34,7 @@ const IndexPage = ({ data, pathContext }) => {
                   <span> &bull; </span>
                   <small>{node.frontmatter.date}</small>
                 </p>
+                <img src={node.frontmatter.img} />
                 <p>
                   {node.excerpt}
                   <br />
