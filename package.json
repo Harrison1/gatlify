@@ -5,6 +5,7 @@
   "author": "Austin Green",
   "dependencies": {
     "bulma": "^0.6.0",
+    "date-fns": "^1.29.0",
     "gatsby": "^1.9.63",
     "gatsby-link": "^1.6.21",
     "gatsby-paginate": "^1.0.6",
