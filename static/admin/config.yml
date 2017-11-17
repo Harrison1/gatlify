@@ -23,19 +23,19 @@ collections:
         valueField: name
       - {label: "Featured Image", name: "img", widget: "string", required: false}
       - {label: "Featured Video", name: "video", widget: "string", required: false}
-      - {label: Tags, name: tags, widget: list, required: false}
+      - {label: "Tags", name: tags, widget: list, required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: authors
-      label: Authors
-      folder: "authors"
+      label: "Authors"
+      folder: "src/pages/authors"
       create: true
       fields:
-        - {name: name, label: Name"}
+        - {name: name, label: "Name"}
         - {name: authorimg, label: "Author Image"}
         - {name: twitterHandle, label: "Twitter Handle"}
-        - {name: bio, label: Bio, widget: text}
+        - {name: bio, label: "Bio", widget: text}
 
   - name: "about"
     label: "About"
