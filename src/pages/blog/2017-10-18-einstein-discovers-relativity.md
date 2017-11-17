@@ -3,7 +3,7 @@ templateKey: blog-post
 path: /einstein
 title: Einstein Discovers Relativity
 author: Harrison McGuire
-img: ''
+image: ''
 video: ''
 date: 2017-10-18T17:12:33.962Z
 ---
