@@ -15,27 +15,27 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Path", name: "path", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
-      - name: author
-        label: Author
-        widget: relation
-        collection: authors
-        searchFields: [name]
-        valueField: name
+      - name: "author"
+        label: "Author"
+        widget: "relation"
+        collection: "authors"
+        searchFields: ["authorName"]
+        valueField: "authorName"
       - {label: "Featured Image", name: "img", widget: "string", required: false}
       - {label: "Featured Video", name: "video", widget: "string", required: false}
       - {label: "Tags", name: tags, widget: list, required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: authors
+  - name: "authors"
     label: "Authors"
     folder: "src/pages/authors"
     create: true
     fields:
-      - {label: "Name", name: authorName, widget: "string", required: false}
-      - {label: "Author Image", name: authorImg, widget: "string", required: false}
-      - {label: "Twitter Handle", name: twitterHandle, widget: "string", required: false}
-      - {label: "Bio", name: bio, widget: "text", required: false}
+      - {label: "Name", name: "authorName", widget: "string", required: false}
+      - {label: "Author Image", name: "authorImg", widget: "string", required: false}
+      - {label: "Twitter Handle", name: "twitterHandle", widget: "string", required: false}
+      - {label: "Bio", name: "bio", widget: "text", required: false}
 
   - name: "about"
     label: "About"
