@@ -4,6 +4,7 @@ path: /einstein
 title: Einstein Discovers Relativity
 author: Harrison McGuire
 image: ''
+featuredImage: https://res.cloudinary.com/several-levels/image/upload/v1510349575/divinity-original-sin_xaih06.jpg
 video: ''
 date: 2017-10-18T17:12:33.962Z
 ---

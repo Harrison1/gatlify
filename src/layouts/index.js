@@ -5,6 +5,9 @@ import Helmet from 'react-helmet'
 import github from '../img/github-icon.svg'
 import 'bulma'
 import 'prismjs/themes/prism-okaidia.css'
+import '../css/global.css'
+import '../css/screen.css'
+import 'prismjs/themes/prism-okaidia.css'
 
 
 const Navbar = () => (

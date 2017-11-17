@@ -29,22 +29,21 @@ const IndexPage = ({ data, pathContext }) => {
 
       {group.map(({ node }) => (
 
-            <div className="content" style={{ border: '1px solid #eaecee', padding: '2em 4em' }} key={node.id}>
-              <p>
-                <Link to={node.frontmatter.path}>{node.frontmatter.title}</Link>
-                <span> &bull; </span>
-                <small>{node.frontmatter.date}</small>
-              </p>
-              <img src={node.frontmatter.img} />
-              <p>
-                {node.excerpt}
-                <br />
-                <br />
-                <Link className="button is-info is-small" to={node.frontmatter.path}>
-                  Keep Reading
+            <article className="post-card">
+                <Link className="post-card-image-link" to={node.frontmatter.path}>
+                    <div className="post-card-image" style={{backgroundImage: 'url(' + node.frontmatter.featuredImage + ')'}}></div>
                 </Link>
-              </p>
-            </div>
+                <div className="post-card-content">
+                    <Link className="post-card-content-link" to={node.frontmatter.path}> 
+                        <header className="post-card-header">
+                            <h2 className="post-card-title">{node.frontmatter.title}</h2>
+                        </header>
+                        <section className="post-card-excerpt">
+                            <p>{node.excerpt}</p>
+                        </section>
+                    </Link>
+                </div>
+            </article>
 
           ))}
 
