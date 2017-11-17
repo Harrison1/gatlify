@@ -29,6 +29,8 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Path", name: "path", widget: "string"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
       - {label: "Author Name", name: "authorName", widget: "string", required: false}
       - {label: "Author Image", name: "authorImage", widget: "string", required: false}
       - {label: "Twitter Handle", name: "twitterHandle", widget: "string", required: false}

@@ -27,6 +27,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
     const posts = result.data.allMarkdownRemark.edges;
     const blogposts = posts.filter(post => post.node.frontmatter.templateKey === 'blog-post');
+    
+    console.log(posts.frontmatter);
 
     pagination({
       edges: blogposts,
@@ -41,7 +43,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       createPage({
         path: node.frontmatter.path,
         component: path.resolve(`src/templates/${String(node.frontmatter.templateKey)}.js`),
-        context: {} // additional data can be passed via context
+        context: {}
       });
     });
   });
