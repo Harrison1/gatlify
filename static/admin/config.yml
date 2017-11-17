@@ -28,14 +28,14 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: authors
-      label: "Authors"
-      folder: "src/pages/authors"
-      create: true
-      fields:
-        - {name: name, label: "Name"}
-        - {name: authorimg, label: "Author Image"}
-        - {name: twitterHandle, label: "Twitter Handle"}
-        - {name: bio, label: "Bio", widget: text}
+    label: "Authors"
+    folder: "src/pages/authors"
+    create: true
+    fields:
+      - {name: name, label: "Name"}
+      - {name: authorimg, label: "Author Image"}
+      - {name: twitterHandle, label: "Twitter Handle"}
+      - {name: bio, label: "Bio", widget: text}
 
   - name: "about"
     label: "About"
