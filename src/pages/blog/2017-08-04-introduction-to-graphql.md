@@ -5,6 +5,7 @@ title: Introduction to GraphQL
 image: >-
   https://res.cloudinary.com/several-levels/image/upload/v1510349575/divinity-original-sin_xaih06.jpg
 date: 2017-08-08T17:12:33.962Z
+description: My Intro
 ---
 Modern apps are interdependent and dynamic. For example, you probably sign in to various web apps using your GitHub account. These apps may be grabbing your avatar directly from GitHub, or some information about your projects. The data about your project is always changing so, as an added bonus, these connections are constantly updating the information that is displayed.
 
