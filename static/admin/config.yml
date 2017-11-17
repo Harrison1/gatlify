@@ -17,7 +17,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "relation", collection: "authors", searchFields: ["authorName"], valueField: "authorName", required: false} 
       - {label: "Featured Image", name: "featuredImage", widget: "string", required: false}
-      - {label: "Card Image", name: "image", widget: "string", required: false}
+      - {label: "Card Image", name: "image", widget: "image", required: false}
       - {label: "Featured Video", name: "video", widget: "string", required: false}
       - {label: "Tags", name: tags, widget: list, required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
