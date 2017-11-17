@@ -32,10 +32,10 @@ collections:
     folder: "src/pages/authors"
     create: true
     fields:
-      - {name: name, label: "Name"}
-      - {name: authorimg, label: "Author Image"}
-      - {name: twitterHandle, label: "Twitter Handle"}
-      - {name: bio, label: "Bio", widget: text}
+      - {label: "Name", name: name, widget: "string", required: false}
+      - {label: "Author Image", name: authorimg, widget: "string", required: false}
+      - {label: "Twitter Handle", name: twitterHandle, widget: "string", required: false}
+      - {label: "Bio", name: bio, widget: "text", required: false}
 
   - name: "about"
     label: "About"
