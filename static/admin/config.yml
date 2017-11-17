@@ -31,9 +31,10 @@ collections:
     label: "Authors"
     folder: "src/pages/authors"
     create: true
+    slug: "{{slug}}"
     fields:
-      - {label: "Name", name: "authorName", widget: "string", required: false}
-      - {label: "Author Image", name: "authorImg", widget: "string", required: false}
+      - {label: "Author Name", name: "authorName", widget: "string", required: false}
+      - {label: "Author Image", name: "authorImage", widget: "string", required: false}
       - {label: "Twitter Handle", name: "twitterHandle", widget: "string", required: false}
       - {label: "Bio", name: "bio", widget: "text", required: false}
 
@@ -41,7 +42,6 @@ collections:
     label: "About"
     folder: "src/pages/about"
     create: false
-    slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
       - {label: "Path", name: "path", widget: "hidden", default: "/about"}
