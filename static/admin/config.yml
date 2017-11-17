@@ -28,6 +28,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Author Name", name: "authorName", widget: "string", required: false}
       - {label: "Author Image", name: "authorImage", widget: "string", required: false}
       - {label: "Twitter Handle", name: "twitterHandle", widget: "string", required: false}
