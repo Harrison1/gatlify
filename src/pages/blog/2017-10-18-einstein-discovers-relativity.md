@@ -10,4 +10,12 @@ In 1905, **Albert Einstein** determined that the laws of physics are the same fo
 
 Look at me now
 
+```cpp
+var a = 4;
+
+function sum(a, b) {
+    return a + b;
+}
+```
+
 ![einstein](/img/einstein.jpg)

@@ -1,9 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
-import Helmet from 'react-helmet';
-import github from '../img/github-icon.svg';
-import 'bulma';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Link from 'gatsby-link'
+import Helmet from 'react-helmet'
+import github from '../img/github-icon.svg'
+import 'bulma'
+import 'prismjs/themes/prism-okaidia.css'
+
 
 const Navbar = () => (
   <nav className="navbar is-light">

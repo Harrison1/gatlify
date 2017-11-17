@@ -1,5 +1,5 @@
 const path = require('path');
-const createPaginatedPages = require('gatsby-paginate');
+const pagination = require('gatsby-paginate');
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
@@ -28,7 +28,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     const posts = result.data.allMarkdownRemark.edges;
     const blogposts = posts.filter(post => post.node.frontmatter.templateKey === 'blog-post');
 
-    createPaginatedPages({
+    pagination({
       edges: blogposts,
       createPage: createPage,
       pageTemplate: "src/templates/index.js",

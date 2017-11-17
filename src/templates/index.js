@@ -28,22 +28,23 @@ const IndexPage = ({ data, pathContext }) => {
       <h4>{data.allMarkdownRemark.totalCount} nodes</h4>
 
       {group.map(({ node }) => (
-              <div className="content" style={{ border: '1px solid #eaecee', padding: '2em 4em' }} key={node.id}>
-                <p>
-                  <Link to={node.frontmatter.path}>{node.frontmatter.title}</Link>
-                  <span> &bull; </span>
-                  <small>{node.frontmatter.date}</small>
-                </p>
-                <img src={node.frontmatter.img} />
-                <p>
-                  {node.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button is-info is-small" to={node.frontmatter.path}>
-                    Keep Reading
-                  </Link>
-                </p>
-              </div>
+
+            <div className="content" style={{ border: '1px solid #eaecee', padding: '2em 4em' }} key={node.id}>
+              <p>
+                <Link to={node.frontmatter.path}>{node.frontmatter.title}</Link>
+                <span> &bull; </span>
+                <small>{node.frontmatter.date}</small>
+              </p>
+              <img src={node.frontmatter.img} />
+              <p>
+                {node.excerpt}
+                <br />
+                <br />
+                <Link className="button is-info is-small" to={node.frontmatter.path}>
+                  Keep Reading
+                </Link>
+              </p>
+            </div>
 
           ))}
 
