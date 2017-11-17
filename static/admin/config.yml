@@ -37,6 +37,7 @@ collections:
     label: "About"
     folder: "src/pages/about"
     create: false
+    slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
       - {label: "Path", name: "path", widget: "hidden", default: "/about"}
