@@ -15,14 +15,16 @@
       render: function() {
         var entry = this.props.entry;
         var image = entry.getIn(['data', 'img']);
-        var bg = this.props.getAsset(image);
+        // var bg = this.props.getAsset(image);
         return h('div', {},
           h('h1', {}, entry.getIn(['data', 'title'])),
-          h('img', {src: bg.toString()}),
+          h('img', {src: image}),
           h('div', {"className": "text"}, this.props.widgetFor('body'))
         );
       }
     });
+
+    console.log('I am here');
         
     CMS.registerPreviewTemplate("blog", PostPreview);
     </script>
