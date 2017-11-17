@@ -15,12 +15,7 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Path", name: "path", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
-      - name: "author"
-        label: "Author"
-        widget: "relation"
-        collection: "authors"
-        searchFields: ["authorName"]
-        valueField: "authorName"
+      - {label: "Author", name: "author", widget: "relation", collection: "authors", searchFields: ["authorName"], valueField: "authorName", required: false} 
       - {label: "Featured Image", name: "img", widget: "string", required: false}
       - {label: "Featured Video", name: "video", widget: "string", required: false}
       - {label: "Tags", name: tags, widget: list, required: false}
@@ -31,7 +26,6 @@ collections:
     label: "Authors"
     folder: "src/pages/authors"
     create: true
-    slug: "{{slug}}"
     fields:
       - {label: "Author Name", name: "authorName", widget: "string", required: false}
       - {label: "Author Image", name: "authorImage", widget: "string", required: false}
