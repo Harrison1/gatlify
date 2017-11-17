@@ -26,6 +26,7 @@ collections:
     label: "Authors"
     folder: "src/pages/authors"
     create: true
+    slug: "{{slug}}"
     fields:
       - {label: "Author Name", name: "authorName", widget: "string", required: false}
       - {label: "Author Image", name: "authorImage", widget: "string", required: false}
