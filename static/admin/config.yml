@@ -15,11 +15,27 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Path", name: "path", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Featured Image", name: "img", widget: "string"}
-      - {label: "Featured Video", name: "video", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "string"}
+      - name: author
+        label: Author
+        widget: relation
+        collection: authors
+        searchFields: [name]
+        valueField: name
+      - {label: "Featured Image", name: "img", widget: "string", required: false}
+      - {label: "Featured Video", name: "video", widget: "string", required: false}
+      - {label: Tags, name: tags, widget: list, required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: authors
+      label: Authors
+      folder: "authors"
+      create: true
+      fields:
+        - {name: name, label: Name"}
+        - {name: authorimg, label: "Author Image"}
+        - {name: twitterHandle, label: "Twitter Handle"}
+        - {name: bio, label: Bio, widget: text}
 
   - name: "about"
     label: "About"
