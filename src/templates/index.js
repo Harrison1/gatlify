@@ -47,13 +47,14 @@ const IndexPage = ({ data, pathContext }) => {
 
                     {group.map(({ node }) => (
 
-                        <article className="post-card post">
+                        <article className="post-card post" key={node.id}>
                             <Link className="post-card-image-link" to={node.frontmatter.path}>
                                 <div className="post-card-image" style={{backgroundImage: 'url(' + node.frontmatter.featuredImage + ')'}}></div>
                             </Link>
                             <div className="post-card-content">
                                 <Link className="post-card-content-link" to={node.frontmatter.path}> 
                                     <header className="post-card-header">
+                                        <span className="post-card-tags">{node.frontmatter.tags[0]}</span>
                                         <h2 className="post-card-title">{node.frontmatter.title}</h2>
                                     </header>
                                     <section className="post-card-excerpt">
