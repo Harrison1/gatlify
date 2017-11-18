@@ -21,8 +21,9 @@ const IndexPage = ({ data, pathContext }) => {
   return (
 
       <div className="home-template">
+      
         <Helmet>
-          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+
         </Helmet>
 
         <header className="site-header outer" style={{backgroundImage: 'url(https://casper.ghost.org/v1.0.0/images/blog-cover.jpg)' }}>
