@@ -57,7 +57,7 @@ const IndexPage = ({ data, pathContext }) => {
                                         <h2 className="post-card-title">{node.frontmatter.title}</h2>
                                     </header>
                                     <section className="post-card-excerpt">
-                                        <p>{node.excerpt}</p>
+                                        <p>{node.frontmatter.description}</p>
                                     </section>
                                 </Link>
                                 <footer className="post-card-meta">

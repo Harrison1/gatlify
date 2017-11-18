@@ -18,6 +18,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               date(formatString: "MMMM DD, YYYY")
               title
               featuredImage
+              description
             }
           }
         }

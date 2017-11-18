@@ -7,6 +7,7 @@ image: ''
 featuredImage: https://res.cloudinary.com/several-levels/image/upload/v1510349575/divinity-original-sin_xaih06.jpg
 video: ''
 date: 2017-10-18T17:12:33.962Z
+description: this is my excerpt
 ---
 In 1905, **Albert Einstein** determined that the laws of physics are the same for all non-accelerating observers, and that the speed of light in a vacuum was independent of the motion of all observers. This was the theory of special **relativity**
 
