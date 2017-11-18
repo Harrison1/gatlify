@@ -34,7 +34,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       edges: blogposts,
       createPage: createPage,
       pageTemplate: "src/templates/index.js",
-      pageLength: 2
+      pageLength: 12
     });
     if (result.errors) {
       return Promise.reject(result.errors);
