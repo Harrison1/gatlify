@@ -65,15 +65,14 @@ const IndexPage = ({ data, pathContext }) => {
 
                 </div>
 
-                <div className="paginate">
+                <div className="paginatation">
                     <div className="previousLink">
-                        <NavLink test={first} url={previousUrl} text=">" />
+                        <NavLink test={first} url={previousUrl} text="Prev" />
                     </div>
+                    <p>{currentPage} of { Math.ceil(total/12)}</p>
                     <div className="nextLink">
-                        <NavLink test={last} url={nextUrl} text="Go to Next Page" />
+                        <NavLink test={last} url={nextUrl} text="Next" />
                     </div>
-                    <h4>{data.allMarkdownRemark.totalCount} nodes {total}</h4>
-                    <h4>page {currentPage} of { Math.ceil(total/12)}</h4>
                 </div>
             </div>
         </main>

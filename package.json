@@ -15,7 +15,6 @@
     "gatsby-plugin-nprogress": "^1.0.7",
     "gatsby-plugin-offline": "^1.0.10",
     "gatsby-plugin-react-helmet": "^1.0.5",
-    "gatsby-plugin-sass": "^1.0.12",
     "gatsby-plugin-sitemap": "^1.2.5",
     "gatsby-plugin-styled-components": "^2.0.2",
     "gatsby-remark-images": "^1.5.18",

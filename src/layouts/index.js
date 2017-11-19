@@ -9,7 +9,7 @@ import '../css/screen.css'
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="Home | Gatsby + Netlify CMS" />
+    <Helmet title="Gatlify CMS" />
     <div>{children()}</div>
   </div>
 );

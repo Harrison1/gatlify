@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import githubLogo from '../img/github-icon-white.svg'
 
 const Nav = ( { isHome } ) => 
     <nav className="site-nav">
@@ -22,6 +23,11 @@ const Nav = ( { isHome } ) =>
                     </Link>
                 </li>
             </ul>
+        </div>
+        <div className="site-nav-right">
+            <a className="github-logo" href="https://github.com/Harrison1/netlify-gatsby-blog" >
+                <img src={ githubLogo } alt="github logo" />
+            </a>
         </div>
     </nav>
 
