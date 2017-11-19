@@ -25,6 +25,10 @@ const IndexPage = ({ data, pathContext }) => {
 
       <div className="home-template">
 
+        <Helmet>
+            <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+        </Helmet>
+
       <Header image='https://casper.ghost.org/v1.0.0/images/blog-cover.jpg' title="Netlify Gatsby Blog" tagline="My Super Cool Tagline" />
       
         <main id="site-main" className="site-main outer" role="main">
