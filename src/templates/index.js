@@ -1,6 +1,8 @@
-import React, { Component } from "react";
-import Link from "gatsby-link";
-import Helmet from 'react-helmet';
+import React, { Component } from "react"
+import Link from "gatsby-link"
+import Helmet from 'react-helmet'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
  
 const NavLink = props => {
@@ -15,31 +17,16 @@ const IndexPage = ({ data, pathContext }) => {
   const { group, index, first, last } = pathContext;
   const previousUrl = index - 1 == 1 ? "" : (index - 1).toString();
   const nextUrl = (index + 1).toString();
-  // const { data } = this.props;
+  const currentPage = index;
   const { edges: nodes } = data.allMarkdownRemark;
+  const total = data.allMarkdownRemark.edges.filter(post => post.node.frontmatter.templateKey === 'blog-post').length;
  
   return (
 
       <div className="home-template">
+
+      <Header image='https://casper.ghost.org/v1.0.0/images/blog-cover.jpg' title="Netlify Gatsby Blog" tagline="My Super Cool Tagline" />
       
-        <Helmet>
-
-        </Helmet>
-
-        <header className="site-header outer" style={{backgroundImage: 'url(https://casper.ghost.org/v1.0.0/images/blog-cover.jpg)' }}>
-            <div className="inner">
-                <div className="site-header-content">
-                    <h1 className="site-title">
-                        Netlify Gatsby Blog
-                    </h1>
-                    <h2 className="site-description">My Super Cool Tagline</h2>
-                </div>
-            </div>
-        </header>
-
-        
-        <h4>{data.allMarkdownRemark.totalCount} nodes</h4>
-
         <main id="site-main" className="site-main outer" role="main">
 
             <div className="inner">
@@ -57,6 +44,7 @@ const IndexPage = ({ data, pathContext }) => {
                                     <header className="post-card-header">
                                         <span className="post-card-tags">{node.frontmatter.tags[0]}</span>
                                         <h2 className="post-card-title">{node.frontmatter.title}</h2>
+                                        <p className="post-card-author">{ node.frontmatter.date }</p>
                                     </header>
                                     <section className="post-card-excerpt">
                                         <p>{node.frontmatter.description}</p>
@@ -71,15 +59,21 @@ const IndexPage = ({ data, pathContext }) => {
 
                     ))}
 
+                </div>
+
+                <div className="paginate">
                     <div className="previousLink">
-                      <NavLink test={first} url={previousUrl} text="Go to Previous Page" />
+                        <NavLink test={first} url={previousUrl} text=">" />
                     </div>
                     <div className="nextLink">
-                      <NavLink test={last} url={nextUrl} text="Go to Next Page" />
+                        <NavLink test={last} url={nextUrl} text="Go to Next Page" />
                     </div>
+                    <h4>{data.allMarkdownRemark.totalCount} nodes {total}</h4>
+                    <h4>page {currentPage} of { Math.ceil(total/12)}</h4>
                 </div>
             </div>
         </main>
+        <Footer />
     </div>
     
   );
