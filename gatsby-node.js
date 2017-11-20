@@ -50,13 +50,19 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             html
             id
             frontmatter {
-              templateKey
-              path
+              author
+              authorImage
+              authorTwitter
               date(formatString: "MMMM DD, YYYY")
-              title
-              featuredImage
               description
+              featuredImage
+              featuredVideo
+              githubLink
+              path
               tags
+              templateKey
+              title
+              uev
             }
           }
         }

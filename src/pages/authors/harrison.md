@@ -4,7 +4,7 @@ templateKey: 'about-page'
 path: /harrison
 authorName: Harrison McGuire
 authorImage: myimage.png
-twitterHandle: '@HarryMcGueeze'
+twitterHandle: HarryMcGueeze
 bio: My Super Cool Bio
 ---
 

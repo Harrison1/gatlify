@@ -1,7 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Link from 'gatsby-Link'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { pageQuery } from './index';
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
@@ -10,14 +12,33 @@ export default function Template({ data }) {
       <Navbar />
       <Helmet title={`Blog | ${post.frontmatter.title}`} />
 
-      <div style={{textAlign: 'center', backgroundImage: 'url(https://res.cloudinary.com/several-levels/image/upload/v1510349575/divinity-original-sin_xaih06.jpg)', width: '100%', height: '30vh', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}}>
+      <div className="blog-post-header" style={{ backgroundImage: `url(${ post.frontmatter.featuredImage })` }}>
+        { post.frontmatter.tags.map((n, i) => {
+            return ( <p key={ i }><Link className="tag-link" to={ `tags/${ n }` }>
+              { n }
+            </Link></p> )
+        })}
       </div>
       <main id="site-main" className="site-main outer bg-white" role="main">
           <div className="inner">
               <article className="post-full">
                   <div className="blog-content">
-                      <h1 className="post-full-title">{post.frontmatter.title}</h1>
+                      <h1 className="post-full-title">{ post.frontmatter.title }</h1>
+                      <div className="date-meta">
+                        <p>{ post.frontmatter.date }</p>
+                        <p>UE4 Version: <span className="uev">{ post.frontmatter.uev }</span></p>
+                      </div>
+                      <p className="github-link">GitHub Link: <a href={ post.frontmatter.githubLink }>{ post.frontmatter.githubLink }</a></p>
                       <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                      <a className="youtube-link" href={ post.frontmatter.featuredVideo }>Please leave any comments on the YouTube Page</a>
+                      <hr />
+                      <section className="author-card">
+                          <img className="author-profile-image" src={ post.frontmatter.featuredImage } alt="author image" />
+                          <section className="author-card-content">
+                              <h4 className="author-card-name">{ post.frontmatter.author }</h4>
+                              <p className="twitter-handle"><a href={ `https://twitter.com/${post.frontmatter.authorTwitter}`}>@{ post.frontmatter.authorTwitter }</a></p> 
+                          </section>
+                      </section>
                   </div>
               </article>
           </div>
@@ -28,15 +49,22 @@ export default function Template({ data }) {
   );
 }
 
-export const pageQuery = graphql`
+export const blogPageQuery = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        path
+        author
+        authorImage
+        authorTwitter
         date(formatString: "MMMM DD, YYYY")
-        title
         featuredImage
+        featuredVideo
+        githubLink
+        path
+        tags
+        title
+        uev
       }
     }
   }
