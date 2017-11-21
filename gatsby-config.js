@@ -91,7 +91,7 @@ module.exports = {
         setup(ref) {
           const ret = ref.query.site.siteMetadata.rssMetadata;
           ret.allMarkdownRemark = ref.query.allMarkdownRemark;
-          ret.generator = "GatsbyJS Netlify CMS Starter";
+          ret.generator = "Gatlify CMS Starter";
           return ret;
         },
         query: `
@@ -121,8 +121,8 @@ module.exports = {
                 title: edge.node.frontmatter.title,
                 description: edge.node.excerpt,
                 author: rssMetadata.author,
-                url: rssMetadata.site_url + edge.node.fields.slug,
-                guid: rssMetadata.site_url + edge.node.fields.slug,
+                url: rssMetadata.site_url + edge.node.frontmatter.path,
+                guid: rssMetadata.site_url + edge.node.frontmatter.path,
                 custom_elements: [{ "content:encoded": edge.node.html }]
               }));
             },
@@ -134,15 +134,14 @@ module.exports = {
               ) {
                 edges {
                   node {
-                    excerpt
+                    excerpt(pruneLength: 200)
                     html
-                    timeToRead
-                    fields { slug }
+                    id
                     frontmatter {
+                      path
                       title
-                      cover
+                      featuredImage
                       date
-                      category
                       tags
                     }
                   }
