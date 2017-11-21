@@ -86,7 +86,74 @@ module.exports = {
     },
     "gatsby-plugin-offline",
     {
-      resolve: "gatsby-plugin-feed"
+      resolve: "gatsby-plugin-feed",
+      options: {
+        setup(ref) {
+          const ret = ref.query.site.siteMetadata.rssMetadata;
+          ret.allMarkdownRemark = ref.query.allMarkdownRemark;
+          ret.generator = "Gatlify CMS Starter";
+          return ret;
+        },
+        query: `
+        {
+          site {
+            siteMetadata {
+              rssMetadata {
+                site_url
+                feed_url
+                title
+                description
+                image_url
+                author
+                copyright
+              }
+            }
+          }
+        }
+      `,
+        feeds: [
+          {
+            serialize(ctx) {
+              const rssMetadata = ctx.query.site.siteMetadata.rssMetadata;
+              return ctx.query.allMarkdownRemark.edges.map(edge => ({
+                categories: edge.node.frontmatter.tags,
+                date: edge.node.frontmatter.date,
+                title: edge.node.frontmatter.title,
+                description: edge.node.frontmatter.description,
+                author: rssMetadata.author,
+                url: rssMetadata.site_url + edge.node.frontmatter.path,
+                guid: rssMetadata.site_url + edge.node.frontmatter.path,
+                custom_elements: [{ "content:encoded": edge.node.html }]
+              }));
+            },
+            query: `
+            {
+              allMarkdownRemark(
+                limit: 1000,
+                sort: { order: DESC, fields: [frontmatter___date] },
+              ) {
+                edges {
+                  node {
+                    excerpt(pruneLength: 200)
+                    html
+                    id
+                    frontmatter {
+                      path
+                      description
+                      title
+                      featuredImage
+                      date
+                      tags
+                    }
+                  }
+                }
+              }
+            }
+          `,
+            output: config.siteRss
+          }
+        ]
+      }
     }
   ]
 }
