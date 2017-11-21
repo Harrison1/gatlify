@@ -12,8 +12,8 @@ const HomeNav = ( { isHome } ) =>
                     </Link>
                 </li>
                 <li role="menuitem">
-                    <Link to="https://google.com">
-                        Google
+                    <Link to="/about">
+                        About
                     </Link>
                 </li>
                 <li role="menuitem">

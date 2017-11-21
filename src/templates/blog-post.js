@@ -28,7 +28,6 @@ export default function Template({ data }) {
                         <p>{ post.frontmatter.date }</p>
                         <p>UE4 Version: <span className="uev">{ post.frontmatter.uev }</span></p>
                       </div>
-                      <p className="github-link">GitHub Link: <a href={ post.frontmatter.githubLink }>{ post.frontmatter.githubLink }</a></p>
                       <div dangerouslySetInnerHTML={{ __html: post.html }} />
                       <a className="youtube-link" href={ post.frontmatter.featuredVideo }>Please leave any comments on the YouTube Page</a>
                       <hr />
