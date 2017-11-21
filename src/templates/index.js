@@ -3,7 +3,7 @@ import Link from "gatsby-link"
 import Helmet from 'react-helmet'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-
+import IronImage from '../components/IronImage'
  
 const NavLink = props => {
   if (!props.test) {
@@ -29,7 +29,7 @@ const IndexPage = ({ data, pathContext }) => {
             <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         </Helmet>
 
-      <Header image='https://casper.ghost.org/v1.0.0/images/blog-cover.jpg' title="Netlify Gatsby Blog" tagline="My Super Cool Tagline" />
+      <Header image='https://casper.ghost.org/v1.0.0/images/blog-cover.jpg' title="Gatlify Blog" tagline="My Super Cool Tagline" />
       
         <main id="site-main" className="site-main outer" role="main">
 
@@ -41,7 +41,7 @@ const IndexPage = ({ data, pathContext }) => {
 
                         <article className="post-card post" key={node.id}>
                             <Link className="post-card-image-link" to={node.frontmatter.path}>
-                                <div className="post-card-image" style={{backgroundImage: 'url(' + node.frontmatter.featuredImage + ')'}}></div>
+                                <IronImage srcLoaded={node.frontmatter.featuredImage} />
                             </Link>
                             <div className="post-card-content">
                                 <Link className="post-card-content-link" to={node.frontmatter.path}> 
