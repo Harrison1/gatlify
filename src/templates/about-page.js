@@ -1,21 +1,31 @@
-import React from 'react';
+import React from 'react'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export default ({ data }) => {
   const { markdownRemark: post } = data;
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-7">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-primary is-bold-light">{post.frontmatter.title}</h2>
-              <div className="content" dangerouslySetInnerHTML={{ __html: post.html }} />
-            </div>
-          </div>
-          <div className="column is-5" />
+    <div>
+
+        <Navbar />
+    
+        <div className="home-template">
+        
+            <main id="site-main" className="site-main outer" role="main">
+            
+                <div className="inner">
+
+                  <h1 className="title is-size-3 has-text-primary is-bold-light">{post.frontmatter.title}</h1>
+                  <div className="content" dangerouslySetInnerHTML={{ __html: post.html }} />
+
+                </div>
+            </main>
+
+            <Footer />
+
         </div>
-      </div>
-    </section>
+
+    </div>
   );
 };
 
