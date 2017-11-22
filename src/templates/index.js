@@ -14,13 +14,12 @@ const NavLink = props => {
 };
  
 const IndexPage = ({ data, pathContext }) => {
-  const { group, index, first, last } = pathContext;
-  const previousUrl = index - 1 == 1 ? "" : (index - 1).toString();
-  const nextUrl = (index + 1).toString();
-  const currentPage = index;
-  const { edges: nodes } = data.allMarkdownRemark;
-  const total = data.allMarkdownRemark.edges.filter(post => post.node.frontmatter.templateKey === 'blog-post').length;
- 
+  const { group, index, first, last } = pathContext
+  const previousUrl = index - 1 == 1 ? "" : (index - 1).toString()
+  const nextUrl = (index + 1).toString()
+  const { edges: nodes } = data.allMarkdownRemark
+  const total = data.allMarkdownRemark.edges.filter(post => post.node.frontmatter.templateKey === 'blog-post').length
+
   return (
 
       <div className="home-template">
@@ -69,7 +68,7 @@ const IndexPage = ({ data, pathContext }) => {
                     <div className="previousLink">
                         <NavLink test={first} url={previousUrl} text="Prev" />
                     </div>
-                    <p>{currentPage} of { Math.ceil(total/12)}</p>
+                    <p>{index} of { Math.ceil(total/12)}</p>
                     <div className="nextLink">
                         <NavLink test={last} url={nextUrl} text="Next" />
                     </div>
