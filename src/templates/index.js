@@ -28,7 +28,7 @@ const IndexPage = ({ data, pathContext }) => {
             <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         </Helmet>
 
-      <Header image='https://casper.ghost.org/v1.0.0/images/blog-cover.jpg' title="Gatlify Blog" tagline="My Super Cool Tagline" />
+      <Header image='https://casper.ghost.org/v1.0.0/images/blog-cover.jpg' title="Gatlify Blog" tagline="A GatsbyJS Netlify CMS Starter. Ghost Casper Style." />
       
         <main id="site-main" className="site-main outer" role="main">
 
