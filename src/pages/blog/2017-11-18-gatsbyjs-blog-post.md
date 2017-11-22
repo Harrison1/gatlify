@@ -1,15 +1,15 @@
 ---
 templateKey: blog-post
-path: /einstein
-title: Einstein Discovers Relativity
+path: /gatsbyjs-blog-post
+title: GatsbyJS Blog Post
 authorImage: https://avatars1.githubusercontent.com/u/5263612?s=460&v=4
 author: Harrison McGuire
 authorTwitter: HarryMcGueeze
-image: https://res.cloudinary.com/several-levels/image/upload/v1510349575/divinity-original-sin_xaih06.jpg
-featuredImage: https://res.cloudinary.com/several-levels/image/upload/v1510349575/divinity-original-sin_xaih06.jpg
+image: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348529/samus_zyte6p.jpg
+featuredImage: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348529/samus_zyte6p.jpg
 featuredVideo: https://www.youtube.com/watch?v=elSN-l2lhH0
-date: 2017-10-18T17:12:33.962Z
-description: this is my excerpt
+date: 2017-11-20T17:12:33.962Z
+description: Gatsbyjs Blog Post excerpt
 tags:
   - world
   - hello

@@ -55,8 +55,8 @@ const IndexPage = ({ data, pathContext }) => {
                                     </section>
                                 </Link>
                                 <footer className="post-card-meta">
-                                    <img className="author-profile-image" src={ node.frontmatter.featuredImage } alt="my name" />
-                                    <span className="post-card-author">Author Name</span>
+                                    <img className="author-profile-image" src={ node.frontmatter.authorImage } alt="my name" />
+                                    <span className="post-card-author">{ node.frontmatter.author }</span>
                                 </footer>
                             </div>
                         </article>

@@ -3,11 +3,13 @@ templateKey: blog-post
 path: /intro-to-graphql
 title: Introduction to GraphQL
 featuredImage: >-
-  https://res.cloudinary.com/several-levels/image/upload/v1510349575/divinity-original-sin_xaih06.jpg
+  https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348527/big-daddy_ddfong.jpg
 image: >-
-  https://res.cloudinary.com/several-levels/image/upload/v1510349575/divinity-original-sin_xaih06.jpg
+  https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348527/big-daddy_ddfong.jpg
 date: 2017-08-08T17:12:33.962Z
 description: this is my excerpt
+authorImage: https://avatars1.githubusercontent.com/u/5263612?s=460&v=4
+author: Harrison McGuire
 tags:
   - hello
   - world

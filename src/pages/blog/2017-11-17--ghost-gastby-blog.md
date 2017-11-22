@@ -1,14 +1,14 @@
 ---
 templateKey: blog-post
-path: /einstein
-title: Einstein Discovers Relativity
+path: /ghost-gat-blog
+title: Ghost Gatsby Blog
 authorImage: https://avatars1.githubusercontent.com/u/5263612?s=460&v=4
 author: Harrison McGuire
 authorTwitter: HarryMcGueeze
-image: https://res.cloudinary.com/several-levels/image/upload/v1510349575/divinity-original-sin_xaih06.jpg
-featuredImage: https://res.cloudinary.com/several-levels/image/upload/v1510349575/divinity-original-sin_xaih06.jpg
+image: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348527/braid-hourglass_jso3su.jpg
+featuredImage: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348527/braid-hourglass_jso3su.jpg
 featuredVideo: https://www.youtube.com/watch?v=elSN-l2lhH0
-date: 2017-10-18T17:12:33.962Z
+date: 2017-10-18T19:12:33.962Z
 description: this is my excerpt
 tags:
   - world

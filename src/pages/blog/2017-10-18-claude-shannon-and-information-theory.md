@@ -3,9 +3,11 @@ templateKey: 'blog-post'
 path: /claude
 title: Claude Shannon and Information Theory
 date: 2017-10-14T12:00:02.000Z
-image: ''
-featuredImage: https://res.cloudinary.com/several-levels/image/upload/v1510349575/divinity-original-sin_xaih06.jpg
+image: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348527/broken-age_kfxadq.jpg
+featuredImage: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348527/broken-age_kfxadq.jpg
 description: this is my excerpt
+authorImage: https://avatars1.githubusercontent.com/u/5263612?s=460&v=4
+author: Harrison McGuire
 tags:
   - go
   - galaxy

@@ -32,7 +32,7 @@ export default function Template({ data }) {
                       <a className="youtube-link" href={ post.frontmatter.featuredVideo }>Please leave any comments on the YouTube Page</a>
                       <hr />
                       <section className="author-card">
-                          <img className="author-profile-image" src={ post.frontmatter.featuredImage } alt="author image" />
+                          <img className="author-profile-image" src={ post.frontmatter.authorImage } alt="author image" />
                           <section className="author-card-content">
                               <h4 className="author-card-name">{ post.frontmatter.author }</h4>
                               <p className="twitter-handle"><a href={ `https://twitter.com/${post.frontmatter.authorTwitter}`}>@{ post.frontmatter.authorTwitter }</a></p> 
