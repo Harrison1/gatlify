@@ -57,7 +57,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               description
               featuredImage
               featuredVideo
-              githubLink
               path
               tags
               templateKey

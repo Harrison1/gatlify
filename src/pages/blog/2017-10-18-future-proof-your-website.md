@@ -1,18 +1,16 @@
 ---
-templateKey: blog-post
-path: /gatsbyjs-blog-post
-title: GatsbyJS Blog Post
+templateKey: 'blog-post'
+path: /future-proof-your-website
+title: Future-proof Your Website
+date: 2017-10-14T12:00:02.000Z
+image: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348527/broken-age_kfxadq.jpg
+featuredImage: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348527/broken-age_kfxadq.jpg
+description: Don't build a website with last decade's tech. The future of the web is mobile, JavaScript and APIs—the JAMstack. Every website is a web app and every web app is a website. Gatsby.js is the universal JavaScript framework you’ve been waiting for.
 authorImage: https://avatars1.githubusercontent.com/u/5263612?s=460&v=4
 author: Harrison McGuire
-authorTwitter: HarryMcGueeze
-image: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348529/samus_zyte6p.jpg
-featuredImage: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348529/samus_zyte6p.jpg
-featuredVideo: https://www.youtube.com/watch?v=elSN-l2lhH0
-date: 2017-11-20T17:12:33.962Z
-description: There are many ways to build a website. If you're considering Gatsby, you may also be looking at some alternatives.
 tags:
-  - javascript
-  - gatsby
+  - galaxy
+  - universe
 uev: 4.18
 ---
 # Aonides cervice flumina causamque et ovantem amabam

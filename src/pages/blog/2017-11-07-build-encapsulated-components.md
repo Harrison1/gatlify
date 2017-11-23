@@ -1,18 +1,18 @@
 ---
 templateKey: blog-post
-path: /gatsbyjs-blog-post
-title: GatsbyJS Blog Post
+path: /build-encapsulated-components
+title: Build Encapsulated Components
 authorImage: https://avatars1.githubusercontent.com/u/5263612?s=460&v=4
 author: Harrison McGuire
 authorTwitter: HarryMcGueeze
-image: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348529/samus_zyte6p.jpg
-featuredImage: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348529/samus_zyte6p.jpg
+image: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348530/witness-bamboo-wallpaper_rhtdxq.jpg
+featuredImage: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348530/witness-bamboo-wallpaper_rhtdxq.jpg
 featuredVideo: https://www.youtube.com/watch?v=elSN-l2lhH0
-date: 2017-11-20T17:12:33.962Z
-description: There are many ways to build a website. If you're considering Gatsby, you may also be looking at some alternatives.
+date: 2017-11-07T17:10:33.962Z
+description: Build encapsulated components that manage their own state, then compose them to make complex UIs.
 tags:
-  - javascript
   - gatsby
+  - games
 uev: 4.18
 ---
 # Aonides cervice flumina causamque et ovantem amabam
@@ -35,6 +35,7 @@ Romana mariti tenore cum Dianae.
     dtdMarketUser = error_hard * syntax_program / zeroPptpDirect;
     var san = controlNetmaskFramework - boot_desktop_drive;
     var disk = 3;
+
 ```
 
 Per invidiae referam venerisque Lyaeus et sub Ausoniae fronte habebas cum? In
@@ -58,6 +59,7 @@ puer numenque quisquis: silvas, parente a repetoque euntes, conspexit.
         namespace_services_cold = -5;
     }
     var cpm = sms_ups_oop / oop_powerpoint - javascript;
+
 ```
 
 Evolvit in haec laetior ope fixis corpore. Quos quid fecisse. Sumit pars albis,
