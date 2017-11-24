@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "Austin Green",
   "dependencies": {
-    "bulma": "^0.6.0",
     "gatsby": "^1.9.63",
     "gatsby-image": "^1.0.24",
     "gatsby-link": "^1.6.21",
