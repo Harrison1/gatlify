@@ -1,8 +1,11 @@
-# Gatlify CMS Starter
+# Gatlify | A GatsbyJS and Netlify CMS Starter styled with Ghost's casper theme
 
-https://my-super-net-site.netlify.com/ 
+[Demo](https://gatlify.netlify.com/)
 
-This repo contains an example blog that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](netlifycms.org): https://gatsby-netlify-cms.netlify.com/.
+![screenshot](https://res.cloudinary.com/dz09rnbhe/image/upload/v1511527756/screenshot_ecekrf.png "screenshot")
+
+
+This repo contains an example blog that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](netlifycms.org):
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](netlify.com) for continuous deployment, and CDN distribution.
 
@@ -12,6 +15,7 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 
 - Node (I recommend using v8.2.0 or higher)
 - [Gatsby CLI](https://www.gatsbyjs.org/docs/)
+- Gatsby ClI version > 1.1.23
 
 ### Run Locally
 ```
