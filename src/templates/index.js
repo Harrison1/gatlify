@@ -5,7 +5,6 @@ import Header from '../components/Header'
 import BlogCard from '../components/BlogCard'
 import PaginateLink from '../components/PaginateLink'
 import Footer from '../components/Footer'
-// import { pageQuery } from './index';
  
 const IndexPage = ({ data, pathContext }) => {
   const { group, index, first, last } = pathContext

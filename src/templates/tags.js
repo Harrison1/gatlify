@@ -2,11 +2,14 @@ import React from "react"
 import Link from "gatsby-link"
 import Header from '../components/Header'
 import HomeNav from '../components/HomeNav'
+import BlogCard from '../components/BlogCard'
 import Footer from '../components/Footer'
+import TagList from '../components/TagList'
 
 export default function Tags({ pathContext }) {
-  const { posts, post, tag } = pathContext
-  const sortedTags = Object.keys(posts).sort();
+
+    const { posts, post, tag } = pathContext
+    const sortedTags = Object.keys(posts).sort();
 
     if (tag) {
         return (
@@ -29,30 +32,11 @@ export default function Tags({ pathContext }) {
                     <div className="inner">
             
                         <div className="post-feed">
-                                
-                        {post.map(post => {
-                            return (
-                                <article className="post-card post" key={post.id}>
-                                    <Link className="post-card-image-link" to={post.frontmatter.path}>
-                                        <div className="post-card-image" style={{backgroundImage: 'url(' + post.frontmatter.featuredImage + ')'}}></div>
-                                    </Link>
-                                    <div className="post-card-content">
-                                        <Link className="post-card-content-link" to={post.frontmatter.path}> 
-                                            <header className="post-card-header">
-                                                <span className="post-card-tags">{post.frontmatter.tags[0]}</span>
-                                                <h2 className="post-card-title">{post.frontmatter.title}</h2>
-                                            </header>
-                                            <section className="post-card-excerpt">
-                                                <p>{post.frontmatter.description}</p>
-                                            </section>
-                                        </Link>
-                                        <footer className="post-card-meta">
-                                            <img className="author-profile-image" src={ post.frontmatter.featuredImage } alt="my name" />
-                                            <span className="post-card-author">Author Name</span>
-                                        </footer>
-                                    </div>
-                                </article>
-                            )})}
+
+                            {post.map(post => (
+
+                                    <BlogCard key={ post.id } path={ post.frontmatter.path } image={ post.frontmatter.featuredImage }  tag={ post.frontmatter.tags[0] } title={ post.frontmatter.title } date ={ post.frontmatter.date } description={ post.frontmatter.description } authorImage={ post.frontmatter.authorImage } authorName={ post.frontmatter.author } />
+                            ))}
 
                         </div>
 
@@ -82,17 +66,7 @@ export default function Tags({ pathContext }) {
                                                     
                                 { sortedTags.map((n, i) => (
 
-                                    <Link to={ `tags/${ n }` } key={i}>
-
-                                        <div className="post-card post">
-                                            <div className="post-card-content">
-                                                <h2 className="post-card-title">
-                                                    { n }
-                                                </h2>
-                                            </div>
-                                        </div>
-                                    
-                                    </Link>
+                                    <TagList tag={ n } key={ i } />
 
                                 ))}
 
