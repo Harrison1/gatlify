@@ -23,9 +23,8 @@ collections:
       - {label: "Featured Video", name: "featuredVideo", widget: "string", required: false}
       - {label: "Tags", name: tags, widget: list, required: false}
       - {label: "Unreal Version", name: uev, widget: string, required: false}
-      - {label: "GitHub Link", name: githubLink, widget: string, required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Excerpt", name: "description", widget: "text", required: false}
+      - {label: "Description", name: "description", widget: "text", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "authors"
