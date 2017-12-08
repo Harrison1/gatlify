@@ -6,11 +6,9 @@ authorImage: https://avatars1.githubusercontent.com/u/5263612?s=460&v=4
 author: Harrison McGuire
 authorTwitter: HarryMcGueeze
 image: https://res.cloudinary.com/several-levels/image/upload/v1510349575/divinity-original-sin_xaih06.jpg
-featuredImage: https://res.cloudinary.com/several-levels/image/upload/v1510349575/divinity-original-sin_xaih06.jpg
 featuredVideo: https://www.youtube.com/watch?v=elSN-l2lhH0
 date: 2017-10-18T17:12:33.962Z
 description: Gatsby.js is Internet Scale. Forget complicated deploys with databases and servers and their expensive, time-consuming setup costs, maintenance, and scaling fears. Gatsby.js builds your site as “static” files which can be deployed easily on dozens of services.
-uev: 4.18
 tags:
   - world
   - react

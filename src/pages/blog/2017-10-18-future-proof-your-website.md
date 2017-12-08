@@ -4,14 +4,13 @@ path: /future-proof-your-website
 title: Future-proof Your Website
 date: 2017-10-14T12:00:02.000Z
 image: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348527/broken-age_kfxadq.jpg
-featuredImage: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348527/broken-age_kfxadq.jpg
 description: Don't build a website with last decade's tech. The future of the web is mobile, JavaScript and APIs—the JAMstack. Every website is a web app and every web app is a website. Gatsby.js is the universal JavaScript framework you’ve been waiting for.
 authorImage: https://avatars1.githubusercontent.com/u/5263612?s=460&v=4
 author: Harrison McGuire
+authorTwitter: HarryMcGueeze
 tags:
   - galaxy
   - universe
-uev: 4.18
 ---
 # Aonides cervice flumina causamque et ovantem amabam
 

@@ -55,13 +55,11 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               authorTwitter
               date(formatString: "MMMM DD, YYYY")
               description
-              featuredImage
-              featuredVideo
+              image
               path
               tags
               templateKey
               title
-              uev
             }
           }
         }

@@ -6,7 +6,6 @@ authorImage: https://avatars1.githubusercontent.com/u/5263612?s=460&v=4
 author: Harrison McGuire
 authorTwitter: HarryMcGueeze
 image: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348529/swapper-wallpaper_a9xjq3.jpg
-featuredImage: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348529/swapper-wallpaper_a9xjq3.jpg
 featuredVideo: https://www.youtube.com/watch?v=elSN-l2lhH0
 date: 2017-11-06T17:10:33.962Z
 description: React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
@@ -14,7 +13,6 @@ tags:
   - space
   - games
   - javascript
-uev: 4.18
 ---
 # Aonides cervice flumina causamque et ovantem amabam
 

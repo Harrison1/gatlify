@@ -6,14 +6,12 @@ authorImage: https://avatars1.githubusercontent.com/u/5263612?s=460&v=4
 author: Harrison McGuire
 authorTwitter: HarryMcGueeze
 image: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348529/flower-wallpaper_cgl4pv.jpg
-featuredImage: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348529/flower-wallpaper_cgl4pv.jpg
 featuredVideo: https://www.youtube.com/watch?v=elSN-l2lhH0
 date: 2017-11-09T17:10:33.962Z
 description: Enjoy the power of the latest web technologies – React.js , Webpack , modern JavaScript and CSS and more — all setup and waiting for you to start building.
 tags:
   - javascript
   - gatsby
-uev: 4.18
 ---
 # Aonides cervice flumina causamque et ovantem amabam
 

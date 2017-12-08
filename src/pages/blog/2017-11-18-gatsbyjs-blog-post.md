@@ -6,14 +6,12 @@ authorImage: https://avatars1.githubusercontent.com/u/5263612?s=460&v=4
 author: Harrison McGuire
 authorTwitter: HarryMcGueeze
 image: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348529/samus_zyte6p.jpg
-featuredImage: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348529/samus_zyte6p.jpg
 featuredVideo: https://www.youtube.com/watch?v=elSN-l2lhH0
 date: 2017-11-20T17:12:33.962Z
 description: There are many ways to build a website. If you're considering Gatsby, you may also be looking at some alternatives.
 tags:
   - javascript
   - gatsby
-uev: 4.18
 ---
 # Aonides cervice flumina causamque et ovantem amabam
 

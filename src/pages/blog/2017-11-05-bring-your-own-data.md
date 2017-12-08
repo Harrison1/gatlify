@@ -6,7 +6,6 @@ authorImage: https://avatars1.githubusercontent.com/u/5263612?s=460&v=4
 author: Harrison McGuire
 authorTwitter: HarryMcGueeze
 image: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348528/eathen-carter_dp9nub.jpg
-featuredImage: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348528/eathen-carter_dp9nub.jpg
 featuredVideo: https://www.youtube.com/watch?v=elSN-l2lhH0
 date: 2017-11-05T17:10:33.962Z
 description: Gatsby’s rich data plugin ecosystem lets you build sites with the data you want — from one or many sources, Pull data from headless CMSs, SaaS services, APIs, databases, your file system & more directly into your pages using GraphQL .
@@ -14,7 +13,6 @@ tags:
   - space
   - games
   - gatsby
-uev: 4.18
 ---
 ### Headings
 

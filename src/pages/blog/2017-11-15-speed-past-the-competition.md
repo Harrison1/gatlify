@@ -4,8 +4,8 @@ path: /speed-past-the-competition
 title: speed-past-the-competition
 authorImage: https://avatars1.githubusercontent.com/u/5263612?s=460&v=4
 author: Harrison McGuire
+authorTwitter: HarryMcGueeze
 image: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348529/ori-and-the-blind-forest-wallpaper-hd_qffhn3.jpg
-featuredImage: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348529/ori-and-the-blind-forest-wallpaper-hd_qffhn3.jpg
 description: First he wanted to stand up quietly and undisturbed, get dressed, above all have breakfast, and only then consider further action.
 tags:
   - react

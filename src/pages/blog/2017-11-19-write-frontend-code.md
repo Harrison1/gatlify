@@ -6,14 +6,12 @@ authorImage: https://avatars1.githubusercontent.com/u/5263612?s=460&v=4
 author: Harrison McGuire
 authorTwitter: HarryMcGueeze
 image: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348529/dead-speace-3-wallpaper_zqciqa.jpg
-featuredImage: https://res.cloudinary.com/dz09rnbhe/image/upload/v1511348529/dead-speace-3-wallpaper_zqciqa.jpg
 featuredVideo: https://www.youtube.com/watch?v=elSN-l2lhH0
 date: 2017-11-20T17:10:33.962Z
 description: All the features developers need right out of the box, Global CDN, Continuous Deployment, one click HTTPS and more…
 tags:
   - netlify
   - cms
-uev: 4.18
 ---
 # Aonides cervice flumina causamque et ovantem amabam
 

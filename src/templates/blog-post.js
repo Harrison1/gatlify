@@ -3,8 +3,6 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Navbar from '../components/Navbar'
 import Tag from '../components/Tag'
-import UnrealVersion from '../components/UnrealVersion'
-import CommentLink from '../components/CommentLink'
 import AuthorCard from '../components/AuthorCard'
 import Footer from '../components/Footer'
 
@@ -19,7 +17,7 @@ const Template = ({ data }) => {
 
       <Helmet title={`Blog | ${post.frontmatter.title}`} />
 
-      <div className="blog-post-header" style={{ backgroundImage: `url(${ post.frontmatter.featuredImage })` }}>
+      <div className="blog-post-header" style={{ backgroundImage: `url(${ post.frontmatter.image })` }}>
 
         { post.frontmatter.tags.map((n, i) => {
               return <Tag key={ i } tag= { n } />
@@ -42,13 +40,9 @@ const Template = ({ data }) => {
 
                         <p>{ post.frontmatter.date }</p>
 
-                        <UnrealVersion version={ post.frontmatter.uev } />
-
                       </div>
 
                       <div dangerouslySetInnerHTML={{ __html: post.html }} />
-
-                      <CommentLink link={ post.frontmatter.featuredVideo } />
 
                       <hr />
 
@@ -79,12 +73,10 @@ query BlogPostByPath($path: String!) {
       authorImage
       authorTwitter
       date(formatString: "MMMM DD, YYYY")
-      featuredImage
-      featuredVideo
+      image
       path
       tags
       title
-      uev
     }
   }
 }
